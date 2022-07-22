@@ -1,8 +1,9 @@
 FROM centos
 MAINTAINER Sander <mail@sandervanvugt.nl>
 
+LABEL description new version
 # Add repo file
-ADD ./sander.repo /etc/yum.repos.d/
+#ADD ./sander.repo /etc/yum.repos.d/
 
 # Install cool software
 RUN yum --assumeyes update && \
